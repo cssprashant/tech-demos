@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Demos</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: #0a0a0a;
+        color: #e4e4e7;
+        line-height: 1.6;
+        padding: 2rem;
+      }
+      
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .subtitle {
+        color: #a1a1aa;
+        margin-bottom: 3rem;
+        font-size: 1.1rem;
+      }
+      
+      .demos {
+        display: grid;
+        gap: 1rem;
+      }
+      
+      .demo-card {
+        background: #18181b;
+        border: 1px solid #27272a;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.2s ease;
+      }
+      
+      .demo-card:hover {
+        border-color: #667eea;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+      }
+      
+      .demo-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #e4e4e7;
+      }
+      
+      .demo-description {
+        color: #a1a1aa;
+        font-size: 0.95rem;
+      }
+      
+      .demo-date {
+        color: #71717a;
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tech Demos</h1>
+      <p class="subtitle">Daily experiments & prototypes deployed via Cloudflare Pages</p>
+      
+      <div class="demos" id="demos-list">
+        <a href="./demos/hello/" class="demo-card">
+          <div class="demo-title">Hello World</div>
+          <div class="demo-description">A minimal placeholder demo proving routing and static assets work.</div>
+          <div class="demo-date">Placeholder</div>
+        </a>
+      </div>
+    </div>
+    
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
